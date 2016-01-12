@@ -1,0 +1,18 @@
+<ion-view view-title="Bebidas">
+    <ion-nav-buttons side="right">
+      <button class="button button-assertive button-clear" ng-click="openModal()">
+	  	O Meu Pedido
+		<i class="icon ion-ios-bookmarks-outline"></i>
+      </button>
+    </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="bebida in bebidas" type="item-text-wrap" href="#/app/bebidas/{{bebida.id}}">
+        <img ng-src="{{bebida.url}}">
+        <h2>{{bebida.name}}</h2>
+        <p>{{bebida.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

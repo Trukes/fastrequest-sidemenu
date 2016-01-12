@@ -1,0 +1,12 @@
+<ion-view view-title="Entradas">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="entrada in entradas" type="item-text-wrap" href="#/tab/entradas/{{entrada.id}}">
+        <img ng-src="{{entrada.url}}">
+        <h2>{{entrada.name}}</h2>
+        <p>{{entrada.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

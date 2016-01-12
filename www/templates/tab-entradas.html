@@ -1,0 +1,71 @@
+<ion-view view-title="Entradas">
+    <ion-nav-buttons side="right">
+      <button class="button button-assertive button-clear" ng-click="openModal()">
+	  	O Meu Pedido
+		<i class="icon ion-ios-bookmarks-outline"></i>
+      </button>
+    </ion-nav-buttons>
+	<ion-content>
+	<div class="row">
+		<div class="col col-50">
+	    <ion-list>
+	      <ion-item padding="true" class="no-padding" ng-repeat="entrada in entradas" ng-if="entrada.id % 2 == 0" type="item-text-wrap" href="#/app/entradas/{{entrada.id}}">
+	    <img ng-src="{{entrada.url}}" width="100%">
+			<div class="row">
+				<div class="col-90">
+			        <h2>{{entrada.name}}</h2>
+			        <p>{{entrada.lastText}}</p>
+			        <p>{{entrada.par}}</p>
+
+				</div>
+				<div class="col-10">			        
+					<button class="button button-clear button-assertive" ng-click="addEntradas(entrada.id)">
+					  <i class="icon ion-plus"></i>
+					</button>
+				</div>
+			</div>
+	      </ion-item>
+	    </ion-list>
+		</div>
+		<div class="col col-50">
+	    <ion-list>
+	      <ion-item class="no-padding" ng-repeat="entrada in entradas" ng-if="entrada.id % 2 != 0" type="item-text-wrap" href="#/app/entradas/{{entrada.id}}">
+	        <img ng-src="{{entrada.url}}" width="100%">
+			<div class="row">
+				<div class="col-90">
+			        <h2>{{entrada.name}}</h2>
+			        <p>{{entrada.lastText}}</p>
+				</div>
+				<div class="col-10">
+					<button class="button button-clear button-assertive" ng-click="addEntradas(entrada.id)">
+					  <i class="icon ion-plus"></i>
+					</button>
+				</div>
+			</div>
+	      </ion-item>
+	    </ion-list>
+		</div>
+
+	</div>
+	</ion-content>
+</ion-view>
+
+
+
+
+
+
+<!--
+<div class="row" ng-repeat="photo in photos" ng-if="$index % 3 == 0" ng-init="photoIndex = $index">
+    <div ng-repeat="i in [0,1,2]" ng-if="(photoIndex + i)<photos.length" class="col-33">
+        <img ng-src="{{photos[photoIndex+i]}}">
+    </div>
+</div>
+
+
+<div class="row" ng-repeat="entrada in entradas" ng-if="$index % 3 == 0" ng-init="photoIndex = $index">
+    <div ng-repeat="i in [0,1,2]" ng-if="(photoIndex + i)<entradas.length" class="col-33">
+        <img ng-src="{{photos[photoIndex+i]}}">
+    </div>
+</div>
+-->
