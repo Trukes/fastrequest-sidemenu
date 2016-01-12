@@ -1,0 +1,105 @@
+/* Empty. Add your own CSS if you like */
+
+
+.bg-number-ppl{
+	background-image: url('../img/layout/bg-ppl-1.jpg');
+	background-size: cover;
+}
+
+.row-padding-manual{
+	margin-top: 50%;
+}
+
+
+.center-vertical {
+  -webkit-align-content: stretch;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/* $dark: #3f4041; */
+
+
+.content-stable{
+	background-color: #ef473a;
+}
+
+
+.no-padding > a.item-content {
+    padding: 0px !important;
+    }
+
+.no-padding > a.item-content > .ng-binding {
+    padding: 5px !important;
+ }
+ 
+ .no-padding{
+	 margin-bottom: 10px;
+	 border: 1px solid #f8d3d1;
+ }
+/*
+ 
+ .crop {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.crop img {
+    width: 100%;
+    height: 300px;
+    margin: -75px 0 0 -100px;
+}
+*/
+
+
+/*
+.dark {
+  background-color: #3f4041 !important;
+  color: #ffffff;
+  .scroll-content {
+    background-color: #3f4041 !important;
+  }
+  .item {
+    background-color: $dark;
+    border: none;
+    border-top: 1px solid #464646;
+    border-bottom: 2px solid #333333;
+    padding: 20px;
+    color: #F0F1F1;
+    max-height: none;
+
+    &:last-child {
+      border-bottom: 1px solid #333333;
+    }
+    &.current{ background-color:darken( $dark, 10% )   !important;
+       border-top: 1px solid #464646 !important;
+    border-bottom: 2px solid #333333 !important;
+      p,h3{opacity: .7;}
+            }
+  }
+  h2,
+  h3,
+  p,
+  a{
+    color: #F0F1F1;
+  }
+}
+.dark-head {
+  text-decoration: none;
+}
+*/
